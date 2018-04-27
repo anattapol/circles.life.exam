@@ -21,9 +21,9 @@ class pageMyAccount(unittest.TestCase):
         cls.loginURL = 'https://shop.circles.life/login'
         cls.driver.get(cls.loginURL)
         cls.login = login.authenBox(cls.driver,cls.loginURL)
-        cls.login.signin('kojiro540@gmail.com','testPassword',validlogin=True)
+        cls.login.signin('anattapol.limopasit.testing@gmail.com','testPassword',validlogin=True)
         cls.driver.get('https://shop.circles.life/my_profile')
-        cls.myAccount = account.myAccount(cls.driver,'kojiro540@gmail.com')
+        cls.myAccount = account.myAccount(cls.driver,'anattapol.limopasit.testing@gmail.com')
 
     def setUp(self):
         pass

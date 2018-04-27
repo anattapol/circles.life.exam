@@ -37,7 +37,7 @@ class pageLogin(unittest.TestCase):
         return result['status']
     
     def test_ValidEmail_InvalidPassword(self):
-        result = self.login.signin('kojiro540@gmail.com','invalidPassword')
+        result = self.login.signin('anattapol.limopasit.testing@gmail.com','invalidPassword')
         return result['status']
     
     def test_InvalidEmail_ValidPassword(self):
@@ -57,7 +57,7 @@ class pageLogin(unittest.TestCase):
         return result['status']
     
     def test_ValidEmail_NoPassword(self):
-        result = self.login.signin('kojiro540@email.com',password="")
+        result = self.login.signin('anattapol.limopasit.testing@email.com',password="")
         return result['status']
     
     def test_InvalidEmail_NoPassword(self):
@@ -65,12 +65,12 @@ class pageLogin(unittest.TestCase):
         return result['status']
 
     def test_spaceOutterValidEmail_ValidPassword(self):
-        result = self.login.signin('  kojiro540@gmail.com  ','testPassword',validlogin=True)
+        result = self.login.signin('  anattapol.limopasit.testing@gmail.com  ','testPassword',validlogin=True)
         self.login.signout()
         return result['status']
     
     def test_ValidBoth_EmailPassword(self):
-        result = self.login.signin('kojiro540@gmail.com','testPassword',validlogin=True)
+        result = self.login.signin('anattapol.limopasit.testing@gmail.com','testPassword',validlogin=True)
         self.login.signout()
         return result['status']
 
