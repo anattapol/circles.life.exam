@@ -7,7 +7,7 @@ This project is base on the assignment.
 5. Write a script to login into Facebook account (test account) from website. And Post a test comment.
 6. Now, write a script to check the same posted comment by logging into Facebook App. And verify the same comment is posted or not.
 
-For the assignment No.1-3, I did it for only desktop version the home page of the website. It is in [test-specification-homePage.md] at root of this project.
+For the assignment No.1-3, I did it for only desktop version the home page of the website. It is in [test-specification-homePage.md](https://github.com/anattapol/circles.life.exam/blob/master/test-specification-homePage.md) at root of this project.
 The script for login to website is in src/tests/test.cl.login.py
 The script for verify email is in src/tests/test.cl.verifyEmail.py
 The script for facebook posting a status is in src/tests/test.fb.py
