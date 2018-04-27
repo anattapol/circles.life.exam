@@ -1,0 +1,6 @@
+{
+    "firefoxdriver_path" : "webdriver\\geckodriver",
+    "firefox_binary_path" : "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe",
+    "elementTimeout" : 60,
+    "implicitly_wait" : 30
+}
